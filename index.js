@@ -67,6 +67,7 @@ obituaryTemplate = params => {
 <link rel="stylesheet" type="text/css" href="style/type/icons.css">
 <link rel="stylesheet" type="text/css" href="style.css">
 <link rel="stylesheet" type="text/css" href="style/css/color/blue.css">
+<link href="statics/manifest.json" rel="manifest">
 <link href="https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
 <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -75,6 +76,19 @@ obituaryTemplate = params => {
 <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
 <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
 <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+      navigator.serviceWorker.register('/statics/sw.js').then(function(registration) {
+        // Registration was successful
+        console.log('ServiceWorker registration successful with scope: ', registration.scope);
+      }, function(err) {
+        // registration failed :(
+        console.log('ServiceWorker registration failed: ', err);
+      });
+    });
+  }
+</script>
 </head>
 <body>
 <div class="content-wrapper">
@@ -545,38 +559,39 @@ obituaryTemplate = params => {
             <form name="contact" netlify netlify-honeypot="bot-field" hidden>
               <input type="text" name="name" />
               <input type="email" name="email" />
-              <input type="text" name="tel" />              
               <textarea name="message"></textarea>
             </form>
 
             <div id="root"></div>
             <script type="text/babel">
               ReactDOM.render(
-                <form method="post" className="vanilla vanilla-form" noValidate>
-                <div className="row">
-                    <div className="col-sm-6 pr-10">
-                    <div className="form-group">
-                        <input type="text" className="form-control" name="name" placeholder="Your name" required="required" />
-                    </div>
-                    </div>
-                    <div className="col-sm-6 pl-10">
-                    <div className="form-group">
-                        <input type="email" className="form-control" name="email" placeholder="Your e-mail" required="required" />
-                    </div>
-                    </div>
-                    <div className="col-sm-6 pr-10">
-                    <div className="form-group">
-                        <input type="tel" className="form-control" name="tel" placeholder="Phone" />
-                    </div>
-                    </div>
-                    <div className="col-sm-12">
-                    <textarea name="message" className="form-control" rows={3} placeholder="Type your message here..." required defaultValue={""} />
-                    <div className="radio-set radio">
-                    </div>
-                    <button type="submit" className="btn btn-rounded" data-error="Fix errors" data-processing="Sending..." data-success="Thank you!">Submit</button>
-                    <footer className="notification-box" />
-                    </div>
-                </div>
+                <form className="vanilla vanilla-form" method="post">
+
+                  <div className="row">
+                      <input type="hidden" name="form-name" value="contact" />
+                      <div className="col-sm-6 pr-10">
+                      <div className="form-group">
+                          <input type="text" className="form-control" name="name" placeholder="Your name" required="required" />
+                      </div>
+                      </div>
+                      <div className="col-sm-6 pl-10">
+                      <div className="form-group">
+                          <input type="email" className="form-control" name="email" placeholder="Your e-mail" required="required" />
+                      </div>
+                      </div>
+                      <div className="col-sm-6 pr-10">
+                      <div className="form-group">
+                          <input type="tel" className="form-control" name="tel" placeholder="Phone" />
+                      </div>
+                      </div>
+                      <div className="col-sm-12">
+                        <textarea name="message" className="form-control" rows={3} placeholder="Type your message here..." required defaultValue={""} />
+                      <div className="radio-set radio">
+                      </div>
+                      <button type="submit" className="btn btn-rounded" data-error="Fix errors" data-processing="Sending..." data-success="Thank you!">Submit</button>
+                      <footer className="notification-box" />
+                      </div>
+                  </div>
                 </form>,
                 document.getElementById("root")
               );
