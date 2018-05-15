@@ -542,6 +542,13 @@ obituaryTemplate = params => {
         <div class="row">
           <div class="col-md-6">
             <div class="form-container">
+            <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+              <input type="text" name="name" />
+              <input type="email" name="email" />
+              <input type="text" name="tel" />              
+              <textarea name="message"></textarea>
+            </form>
+
             <div id="root"></div>
             <script type="text/babel">
               ReactDOM.render(
