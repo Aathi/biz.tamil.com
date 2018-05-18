@@ -718,7 +718,7 @@ $(document).ready(function() {
         var $window = $(window),
             mapInstances = [],
             $pluginInstance = $('.google-map').lazyLoadGoogleMaps({
-                key: false,
+                key: 'AIzaSyCTsDBoEuq4QDhAS_Bmear6IF14V30rOX0', 
                 callback: function(container, map) {
                     var $container = $(container),
                         center = new google.maps.LatLng($container.attr('data-lat'), $container.attr('data-lng'));

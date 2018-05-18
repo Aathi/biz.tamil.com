@@ -114,13 +114,13 @@ randomConcept = () => {
   return concepts[Math.floor(Math.random() * concepts.length)];
 };
 
-services = ({ id, title, content }) => {
+services = ({ id, title, content, image }) => {
   return `
   <div class="space70"></div>
     <div class="row flex-middle gutter60">
       <div class="col-sm-6 ${id % 2 == 0 ? "col-sm-push-6" : ""}">
         <div class="icon-img icon-svg icon-l text-right">
-          <img src="style/images/icons/${randomConcept()}" alt="" />
+          <img src="style/images/art/${image}" alt="${title}" />
         </div>
       </div>
       <div class="space20 visible-xs clearfix"></div>
@@ -275,7 +275,8 @@ obituaryTemplate = params => {
               services({
                 id: index,
                 title: data.title,
-                content: data.content
+                content: data.content,
+                image: data.image
               })
             )}
           </div>
@@ -417,8 +418,9 @@ obituaryTemplate = params => {
         <div class="col-md-6 col-md-offset-3">
           <div class="widget text-center">
             <h3>Get in Touch with Us</h3>
-            <p>Maecenas faucibus molli interdum. Cras mattis consectetur purus sitor amet sed donec malesuada ullamcorper odio.
-              Curabitur blandit tempus porttitor vollisky inceptos.</p>
+            <p>
+              You can also get in touch with us via Social Media. Below are several ways to stay connected with us
+            </p>
             <div class="space30"></div>
             <ul class="social social-bg social-s">
               <li>
@@ -439,7 +441,13 @@ obituaryTemplate = params => {
             </ul>
             <div class="space30"></div>
             <div class="contact-info">
-              <span> Moonshine St. 14/05 Light City </span>
+              <span>
+              ${
+                params["Address"]
+                  ? params["Address"]
+                  : "Your address goes here"
+              }
+              </span>
               <span>${params["Phone"] ? params["Phone"] : "020 00000000"}</span>
               <span>
               <a href="${

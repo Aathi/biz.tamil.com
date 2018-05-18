@@ -1,38 +1,47 @@
 [
     {
         "title": "Design and build",
+        "image": "services_0008_design-build.jpg",
         "content": "We can take your building project from design to completion. If it’s a complete renovation, an extension for an open plan kitchen, extra bedroom, or more living space, or even a loft conversion, we can provide the full service you need. Our in-house project manager will deal with architects, planning and building control and we have experienced specialist Builders, Plumbers, Gas and Heating Engineers, Electricians, Plasterers, Joiners, Painter-Decorators, Interior Designers and Finishers who can quickly and professionally complete your job."        
     },
     {
         "title": "General building works",
+        "image": "services_0007_general-building-works.jpg",
         "content": "We can also ensure you get a highly polished finish to your rooms. From metal stud partitions to finish coat plaster we cater for all types of plastering and rendering. Whilst if you want to tile floors, walls, or even a feature wall our skilled specialists can deliver a quick and beautiful result. We can also complete a new floor covering in hardwood, laminate, engineered tiles (or many more options). If you have problems with your floor, damp, dry rot, wet rot woodworm or if it’s a solid floor we can provide a solution."        
     },
     {
         "title": "24-hour repairs",
+        "image": "services_0006_24-hour-repairs.jpg",
         "content": "Our specialist tradesmen are also on call to help with small jobs like fitting door handles, replacing light fittings or emergency lock replacements. We have experienced specialist Builders, Plumbers, Gas and Heating Engineers, Electricians, Plasterers, Joiners, Painter-Decorators, Interior Designers and Finishers who can quickly and professionally complete your job."        
     },
     {
         "title": "Home Extensions & Refurbishments",
+        "image": "services_0005_refurbishments.jpg",
         "content": " A home extension, add-on or refurbishment is a great way to add more space and potential to your home whilst significantly increasing its value. We have all the necessary skills and expertise to see your project through from start to finish. We will help design and plan an extension that is specific to your needs and desires, and build it to your exact requirements. We use only the best materials available to ensure high-quality results and high customer satisfaction."        
     },
     {
         "title": "Windows and doors",
+        "image": "services_0003_windows-doors.jpg",
         "content": "Fast resolution of window and door problems Window repairs such as misted unit replacements are usually completed within a few days, which includes a visit to quote and measure, ordering the unit and returning to install it. We carry a comprehensive stock of the most commonly used parts, so can often offer same day repairs for jobs such as a door or window lock replacements, hinge replacements and door adjustments – as well as new patio wheel or track installations and leaking conservatories. For less common parts, our wide network of quality suppliers means we can usually get hold of the required products quickly for a swift resolution of the window or door problem."        
     },
     {
         "title": "Kitchens & Bathrooms",
+        "image": "services_0002_kitchens-bathrooms.jpg",
         "content": "We offer a full kitchen and bathroom design and installation service. All our kitchens are bespoke to your specification and all bathrooms are individual to your space and your taste. If you want contemporary, state of the art designer style or a more traditional hand-painted design, we can cater to your needs. Both kitchen and bathroom brochures are available on request. For more information about Kitchen Installations and our Bathroom Installation or Repair Services, or to see some of our Work Examples: "        
     },
     {
         "title": "Electrical",
+        "image": "services_0001_electrical.jpg",
         "content": "Our Company undertakes electrical repairs in London with NICEIC approval. As an approved electrical contractor and accredited Domestic Installer, we design, install, commission and maintain all types of electrical installations. Customers can use our services with the knowledge that our company is fully compliant with UK Safety Legislation, as safety is our top priority."        
     },
     {
         "title": "Gas Engineers and Plumbing",
+        "image": "services_0000_gas-engineers-and-plumbing.jpg",
         "content": "Emergency Gas and Central heating services: Gas pipe repair, Gas leak detection, Gas cooker installation, Gas fire service, Landlord certificates, Boiler repairs, Gas appliance repairs, Emergency call out, Gas Safe Reg. Our specialist engineers of domestic gas systems and appliances including gas fires, gas cookers, gas central heating and hot water systems.  Our engineers are registered with Gas Safe to carry out gas work safely and to professional standards.  "        
     },
     {
         "title": "Renewable Energy",
+        "image": "services_0004_renewable-energy.jpg",
         "content": "Helping customers to #go green, is a passion with our professional team helping you make the right decisions. We will design, install and maintain your system to give you years of Heat and Power"        
     }
 ]
